@@ -16,18 +16,19 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {
-        name: "Your App Name",
-        short_name: "App",
-        description: "Your app description",
-        theme_color: "#ffffff",
+        name: "Real-time Voice",
+        short_name: "RTV",
+        description:
+          "An app that uses the Open AI api speech-to-speech for natural conversations. Works natively with PWA.",
+        theme_color: "#007fff",
         icons: [
           {
-            src: "pwa-192x192.png",
+            src: "logo-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "pwa-512x512.png",
+            src: "logo-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
