@@ -38,18 +38,20 @@ onMounted(fetchApiKey);
 
 <template>
   <div
-    class="flex flex-col items-center justify-center h-screen gap-6 max-w-sm mx-auto w-full"
+    class="flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8"
   >
-    <h1 class="text-4xl font-bold">Talk with ChatGPT</h1>
-    <div class="space-y-4 w-full">
-      <Input v-model="apiKey" placeholder="Your API key" />
-      <Button
-        class="w-full"
-        @click="handleButtonClick"
-        :disabled="isButtonDisabled"
-      >
-        {{ buttonText }}
-      </Button>
+    <div class="w-full max-w-md space-y-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-center">Talk with ChatGPT</h1>
+      <div class="space-y-4">
+        <Input v-model="apiKey" placeholder="Your API key" />
+        <Button
+          class="w-full"
+          @click="handleButtonClick"
+          :disabled="isButtonDisabled"
+        >
+          {{ buttonText }}
+        </Button>
+      </div>
     </div>
   </div>
 </template>
