@@ -3,10 +3,12 @@ import { computed } from 'vue';
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  disabled?: boolean;
 }
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: 'primary',
+  disabled: false,
 });
 
 const buttonClasses = computed(() => {
@@ -19,12 +21,14 @@ const buttonClasses = computed(() => {
     ghost: 'hover:bg-accent hover:text-accent-foreground',
   };
 
-  return `${baseClasses} ${variantClasses[props.variant]}`;
+  const disabledClasses = 'opacity-50 cursor-not-allowed pointer-events-none';
+
+  return `${baseClasses} ${variantClasses[props.variant]} ${props.disabled ? disabledClasses : ''}`;
 });
 </script>
 
 <template>
-  <button :class="buttonClasses">
+  <button :class="buttonClasses" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
