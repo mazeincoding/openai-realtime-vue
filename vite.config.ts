@@ -17,7 +17,7 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {
         name: "Real-time Voice",
-        short_name: "RTV",
+        short_name: "Real-time Voice",
         description:
           "An app that uses the Open AI api speech-to-speech for natural conversations. Works natively with PWA.",
         theme_color: "#007fff",
