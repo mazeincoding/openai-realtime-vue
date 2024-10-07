@@ -1,14 +1,12 @@
-<script lang="ts">
-import { createApp } from "vue";
+<script setup lang="ts">
+import { onMounted } from 'vue';
 
-createApp({
-  setup() {
-    // This runs before the component is mounted
-    if (typeof document !== "undefined") {
-      document.documentElement.classList.add("light");
-    }
-  },
-}).mount("#app");
+onMounted(() => {
+  // This runs after the component is mounted
+  if (typeof document !== "undefined") {
+    document.documentElement.classList.add("light");
+  }
+});
 </script>
 
 <template>
