@@ -20,7 +20,7 @@ export default defineConfig({
         short_name: "Real-time Voice",
         description:
           "An app that uses the Open AI api speech-to-speech for natural conversations. Works natively with PWA.",
-        theme_color: "#007fff",
+        theme_color: "#020817",
         icons: [
           {
             src: "logo-192x192.png",
