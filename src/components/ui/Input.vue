@@ -2,12 +2,14 @@
 import { computed } from "vue";
 
 interface InputProps {
+  modelValue: string;
   type?: string;
   placeholder?: string;
   disabled?: boolean;
 }
 
 const props = withDefaults(defineProps<InputProps>(), {
+  modelValue: '',
   type: "text",
   placeholder: "",
   disabled: false,
@@ -28,12 +30,11 @@ const inputClasses = computed(() => [
 
 <template>
   <input
+    :value="modelValue"
     :type="type"
     :placeholder="placeholder"
     :disabled="disabled"
     :class="inputClasses"
-    @input="
-      emit('update:modelValue', ($event.target as HTMLInputElement).value)
-    "
+    @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
   />
 </template>
