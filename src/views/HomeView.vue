@@ -38,7 +38,7 @@ onMounted(fetchApiKey);
 
 <template>
   <div
-    class="flex flex-col items-center justify-center min-h-screen px-4 py-8 sm:px-6 lg:px-8"
+    class="flex flex-col items-center justify-center min-h-screen px-8 py-8 sm:px-6 lg:px-8"
   >
     <div class="w-full max-w-md space-y-8">
       <h1 class="text-3xl sm:text-4xl font-bold text-center">Talk with ChatGPT</h1>
