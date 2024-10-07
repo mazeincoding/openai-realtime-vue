@@ -1,0 +1,13 @@
+# Technology stack
+* Use Vue 3 as the framework
+* Use Tailwind CSS for styling
+* Use Pinia for state management
+* Use Vue Router for navigation
+* Use Vite as the build tool
+* Use Vue PWA for offline support
+
+# Rules
+* Always separate concerns when writing code. Think about how you can make the code more reusable and readable.
+* Always use best practices.
+* Keep the code clean and DRY.
+* Do not change things that are not explicitly asked to be changed.
